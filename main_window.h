@@ -2,6 +2,7 @@
 #define MAIN_WINDOW_H
 
 #include <QMainWindow>
+#include "user_info.h"
 #include "chat_widget.h"
 #include "user_list_widget.h"
 class MainWindow : public QMainWindow

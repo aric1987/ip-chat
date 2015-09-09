@@ -28,17 +28,11 @@ void MainWindow::createChatWidgetSlocFunc()
 void MainWindow::userListWidgetClickedSlocFunc(const QModelIndex &index)
 {
 
-	chatWidget->addChatDialog(userListWidget->getUserName(index));
-	QRect rect = geometry();
-	chatWidget->setHidden(!chatWidget->isHidden());
-	if(chatWidget->isHidden())
+	if(chatWidget == NULL)
 	{
-		setGeometry(rect);
-	}
-	else
-	{
-		QWidget *widget = userListWidget->itemWidget(userListWidget->item(index.row()));
-		userListWidget->item(index.row())->setBackgroundColor(QColor("red"));
+		chatWidget = new ChatWidget(UserInfo(), NULL);
+		chatWidget->setHidden(true);
+		chatWidget->show();
 	}
 }
 
@@ -47,7 +41,7 @@ MainWindow::MainWindow(QWidget *parent)
 	: QMainWindow(parent)
 {
 	chatWidget = NULL;
-
+	setWindowIcon(QIcon(":/pixmaps/app/pixmaps/app/ip-tux.png"));
 	QWidget *centralWidget = new QWidget();
 	this->setCentralWidget(centralWidget);
 
@@ -57,9 +51,7 @@ MainWindow::MainWindow(QWidget *parent)
 	userListWidget = new UserListWidget();
 	connect(userListWidget, SIGNAL(clicked(QModelIndex)), this, SLOT(userListWidgetClickedSlocFunc(QModelIndex)));
 	mainLayout->addWidget(userListWidget);
-	chatWidget = new ChatWidget(this);
-	chatWidget->setHidden(true);
-	mainLayout->addWidget(chatWidget);
+
 }
 
 MainWindow::~MainWindow()

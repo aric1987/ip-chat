@@ -9,7 +9,6 @@ int main(int argc, char *argv[])
 	translator.load(":/langurage/qscom_zh.qm");
 	app.installTranslator(&translator);
 	MainWindow mainWindow;
-	mainWindow.setWindowIcon(QIcon(":/pixmaps/app/pixmaps/app/ip-tux.png"));
 	mainWindow.show();
 
 	return app.exec();

@@ -3,18 +3,27 @@
 
 #include <QWidget>
 
+#include <QMenuBar>
+#include <QTextEdit>
+#include <QListWidget>
+#include "user_info.h"
+
 class ChatWidget : public QWidget
 {
 	Q_OBJECT
-public:
+private:
+	QTextEdit *recvMsgEdit;
+	QTextEdit *sendMsgEdit;
+	QTextEdit *userInfoEdit;
+	QListWidget *fileTransmitWidget;
 
 
 signals:
 
 private:
-	void createMenuBar();
+	QMenuBar *createMenuBar();
 public:
-	explicit ChatWidget(QWidget *parent = 0);
+	explicit ChatWidget(const UserInfo &userInfo, QWidget *parent = 0);
 	void addChatDialog(const QString &name);
 	virtual QSize minimumSizeHint() const;
 	virtual QSize sizeHint() const;
