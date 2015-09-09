@@ -1,3 +1,7 @@
+/doc
+/example
+*.user
+
 # Compiled Object files
 *.slo
 *.lo

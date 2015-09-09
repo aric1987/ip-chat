@@ -1,0 +1,44 @@
+<RCC>
+    <qresource prefix="/pixmaps/icon">
+        <file>pixmaps/icon/icon-blowfish.png</file>
+        <file>pixmaps/icon/icon-bug.png</file>
+        <file>pixmaps/icon/icon-cow.png</file>
+        <file>pixmaps/icon/icon-daemon.png</file>
+        <file>pixmaps/icon/icon-dog.png</file>
+        <file>pixmaps/icon/icon-elephant.png</file>
+        <file>pixmaps/icon/icon-frog.png</file>
+        <file>pixmaps/icon/icon-ghost.png</file>
+        <file>pixmaps/icon/icon-konqui.png</file>
+        <file>pixmaps/icon/icon-lion.png</file>
+        <file>pixmaps/icon/icon-monkey.png</file>
+        <file>pixmaps/icon/icon-penguin.png</file>
+        <file>pixmaps/icon/icon-pig.png</file>
+        <file>pixmaps/icon/icon-qq.png</file>
+        <file>pixmaps/icon/icon-rabbit.png</file>
+        <file>pixmaps/icon/icon-scream.png</file>
+        <file>pixmaps/icon/icon-teddybear.png</file>
+        <file>pixmaps/icon/icon-turtle.png</file>
+        <file>pixmaps/icon/icon-tux.png</file>
+    </qresource>
+    <qresource prefix="/pixmaps/menu">
+        <file>pixmaps/menu/menu-board.png</file>
+        <file>pixmaps/menu/menu-detect.png</file>
+        <file>pixmaps/menu/menu-group.png</file>
+        <file>pixmaps/menu/menu-share.png</file>
+    </qresource>
+    <qresource prefix="/pixmaps/tip">
+        <file>pixmaps/tip/tip-error.png</file>
+        <file>pixmaps/tip/tip-finish.png</file>
+        <file>pixmaps/tip/tip-hide.png</file>
+        <file>pixmaps/tip/tip-recv.png</file>
+        <file>pixmaps/tip/tip-send.png</file>
+        <file>pixmaps/tip/tip-show.png</file>
+    </qresource>
+    <qresource prefix="/sound">
+        <file>sound/msg.ogg</file>
+        <file>sound/trans.ogg</file>
+    </qresource>
+    <qresource prefix="/pixmaps/app">
+        <file>pixmaps/app/ip-tux.png</file>
+    </qresource>
+</RCC>
